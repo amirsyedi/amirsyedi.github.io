@@ -90,6 +90,8 @@ header.sticky ul li a{
     position: relative;
     width: 100%;
     height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 .main{
     position: relative;
@@ -103,6 +105,21 @@ header.sticky ul li a{
 }
 .main h3{
     font-size: 30px;
+}
+.btn{
+    background-color: #e07a5f; 
+    border: 2px solid #e07a5f;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid #e07a5f;
 }
 /* --------------------------about-------------------------- */
 .container{
