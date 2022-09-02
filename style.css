@@ -1,4 +1,4 @@
-/* color 
+/* color code
 #3d405b
 #e07a5f
 #f4f1de */
@@ -7,12 +7,14 @@
     margin: 0;
     top: 0;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: 'Montserrat';
 }
 body{
     background: #3d405b;
 }
+
 /* --------------------------header-------------------------- */
+
 header span, .autoinput{
     color: #e07a5f;
 }
@@ -28,7 +30,6 @@ header{
     padding: 40px 10%;
     z-index: 100000;
 }
-
 header .logo{
     color: #f4f1de;
     position: relative;
@@ -44,7 +45,6 @@ header ul{
     justify-content: space-between;
     align-items: center;
 }
-
 header ul li {
     position: relative;
     list-style: none;
@@ -82,6 +82,9 @@ header.sticky ul li a{
     color: #3d405b;
     font-weight: bold;
     letter-spacing: 2px;
+}
+header .fas{
+    display: none;
 }
 
 /* --------------------------banner-------------------------- */
@@ -121,7 +124,9 @@ header.sticky ul li a{
     background: transparent;
     border: 2px solid #e07a5f;
 }
+
 /* --------------------------about-------------------------- */
+
 .container{
     padding: 10px 10%;
     color: #f4f1de;
@@ -196,6 +201,7 @@ header.sticky ul li a{
 
 
 /* --------------------------social links-------------------------- */
+
 .social{
     display: flex;
     flex-wrap: wrap;
@@ -220,4 +226,109 @@ header.sticky ul li a{
 .social .links a:hover{
     color: #e07a5f;
     transform: translateY(-10px);
+}
+
+/* --------------------------PROJECT-------------------------- */
+
+.project{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+.pmain{
+    position: relative;
+    top: 10%;
+    padding: 0 10%;
+    color: #f4f1de;
+}
+.pmain h3{
+    font-size: 30px;
+    text-align: center;
+}
+.pcontent{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+.pcontent p{
+    color: #f4f1de;
+    font-size: 40px;
+}
+
+/* --------------------------MEDIA-------------------------- */
+
+@media only screen and (max-width: 600px) {
+/* --------------------------main-------------------------- */   
+    .main h1, .main h3{ 
+        font-size: 20px;
+    }
+
+/* --------------------------header-------------------------- */  
+
+    header .fas{
+        display: block;
+        font-size: 25px;
+        color: #f4f1de;
+    }
+    header ul{
+        background: #e07a5f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        padding-left: 0;
+        display: block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    header ul li{
+        margin: 25px;
+    }
+    header ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        cursor: pointer;
+    }
+    header.sticky .fas{
+        display: block;
+        font-size: 25px;
+        color: #3d405b;
+    }
+    header.sticky ul{
+        background: #f4f1de;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        padding-left: 0;
+        display: block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+/* --------------------------about-------------------------- */  
+
+    .subtitles{
+        font-size: 40px;
+    }
+    .col1, .col2{
+        flex-basis: 100%;
+    }
+    .col1{
+        margin-bottom: 30px;
+    }
+    .col2{
+        font-size: 14px;
+    }
+    .tablinks{
+        font-size: 16px;
+        margin-right: 20px;
+    }
 }

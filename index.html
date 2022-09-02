@@ -12,14 +12,17 @@
     <header>
         <div class="logo"><span>A</span>mer.</div>
         <!-- <a href="" class="logo">Amer syedi</a> -->
-        <ul>
+        <ul id="sidemenu">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
     </header>
     <section id="banner" class="banner">
         <div class="main">
-            <h3>Hello,</h3>
+            <h3>Bonjour,</h3>
             <h1>I'm <span class="autoinput"></span></h1>
             <a href="" class="btn" download="Resume Amir Rusyaidi Embong.pdf">Download Resume</a>
         </div>
@@ -30,7 +33,7 @@
                 <a href="https://github.com/amirsyedi" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.facebook.com/amrsyedi/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
-        </div>
+        </div> 
     </section>
     <!-- --------------about------------ -->
     <section class="about" id="about">
@@ -42,7 +45,7 @@
                 <div class="col2">
                     <h1 class="subtitles">About Me</h1>
                     <p> Hi there, my name is Amir. I'm fresh graduate from Universiti Teknologi Mara (UiTM) Shah Alam majoring in Bachelors of Information Technology.
-                        I am excited to begin my career in the field of information tecnology. I look forward to put my education and acquired skills to use. 
+                        I am excited to begin my career in the field of information technology. I look forward to put my education and acquired skills to use. 
                         I also eager to learn and gain knowledge about new technologies that I never use before.
                     </p>
                     <div class="tabs">
@@ -126,6 +129,15 @@
             </div>  
         </div>
     </section>
+     <!-- --------------project-------------->
+    <section class="project">
+        <div class="pmain">
+            <h3>Project</h3>
+        </div>
+        <div class="pcontent">
+            <p>Coming Soon...</p>
+        </div>
+    </section>
     <script type="text/javascript">
         window.addEventListener("scroll",function(){
             var header = document.querySelector("header");
@@ -155,6 +167,17 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active");
         }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
     </script>
 </body>
 </html>
